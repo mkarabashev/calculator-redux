@@ -16,14 +16,14 @@ const record = (
         value: action.input,
         parenth: 0,
         isNew: false
-      })
+      });
     case 'NEW_INPUT':
       return state.push({
         parent: state.size - 1,
         value: action.input,
         parenth: 0,
         isNew: true
-      })
+      });
     case 'ADD_INPUT':
       return state.push({
         parent: state.size - 1,

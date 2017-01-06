@@ -51,6 +51,13 @@ switch(process.env.npm_lifecycle_event) {
           path: PATHS.build,
           filename: '[name].[chunkhash].js',
           chunkFilename: '[chunkhash].js'
+        },
+        resolve: {
+          extensions: [ '', '.js', '.jsx' ],
+          alias: {
+            react: path.join(__dirname, 'node_modules/react/dist/react.min.js'),
+            'react-dom': path.join(__dirname, 'node_modules/react-dom/dist/react-dom.min.js')
+          }
         }
       },
       parts.clean(PATHS.build),

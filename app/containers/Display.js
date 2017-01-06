@@ -13,13 +13,13 @@ class Display extends Component {
             <span className='light'>{')'.repeat(expression.parenth)}</span>
         </div>
       </div>
-    )
+    );
   }
 }
 
 Display.propTypes = {
   expression: PropTypes.string.isRequired
-}
+};
 
 const mapStateToProps = state => ({ expression: state.get(-1) });
 

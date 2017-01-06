@@ -1,4 +1,4 @@
-import { clearInput, newInput, addInput, undo } from '../actions'
+import { clearInput, newInput, addInput, undo } from '../actions';
 import evaluate from './evaluate';
 
 export default input => {
@@ -71,7 +71,7 @@ const parenthCheck = input => {
     if (count < 0) break;
   }
   return count;
-}
+};
 
 const onNew = (dispatch, input) => {
   if (/[\w(.]/.test(input) &&

@@ -32,7 +32,7 @@ class Buttons extends Component {
           )}
         </tbody>
       </table>
-    )
+    );
   }
 }
 

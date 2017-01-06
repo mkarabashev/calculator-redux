@@ -1,6 +1,6 @@
 {
   "name": "calculator",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a calculator made with redux",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
