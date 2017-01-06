@@ -52,11 +52,12 @@ export default input => {
       case 'C':
         return dispatch(undo());
 
-      case '=':
+      case '=': {
         let result = +evaluate(record.value + new Array(record.parenth + 1).join(')'));
         const decimals = result.toString().split('.')[1];
         result = decimals && decimals.length > 12 ? +result.toPrecision(12) : +result;
         dispatch(newInput(result));
+      }
     }
   };
 };

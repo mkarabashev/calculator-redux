@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
 import Button from '../components/Button';
 import smartInterface from '../utils/smartInterface.js';
 
-export default class Buttons extends Component {
+class Buttons extends Component {
   render () {
     const { dispatch } = this.props;
     const buttons = [
@@ -35,4 +35,9 @@ export default class Buttons extends Component {
     )
   }
 }
+
+Buttons.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
+
 export default connect()(Buttons);

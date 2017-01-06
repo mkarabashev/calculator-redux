@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 
 class Display extends Component {
+
   render () {
-    const { record } = this.props;
-    const expression = record.get(-1);
+    const { expression } = this.props;
 
     return (
       <div className='th'>
@@ -16,7 +16,11 @@ class Display extends Component {
     )
   }
 }
-const mapStateToProps = state => {
-  return { record: state };
-};
+
+Display.propTypes = {
+  expression: PropTypes.string.isRequired
+}
+
+const mapStateToProps = state => ({ expression: state.get(-1) });
+
 export default connect(mapStateToProps)(Display);

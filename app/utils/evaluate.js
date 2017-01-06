@@ -19,7 +19,7 @@ export default function evaluate(input) {
   input = input.split(input.slice(k, i + j + 2)).join(part);
   //input = input.slice(0, k) + part + input.slice(i + j + 2);
   return evaluate(input);
-};
+}
 
 const evalBasic = input => {
   input = input.split(' ');
@@ -29,7 +29,6 @@ const evalBasic = input => {
 };
 
 const evalOperands = (input, op1, op2) => {
-  const n = input.length
   for (let i = 0; i < input.length; i++) {
     switch (input[i]) {
       case op1:
