@@ -1,0 +1,92 @@
+body {
+  font-family: Ubuntu,sans-serif;
+  background-color: #dde0e5;
+  color: #090a3a;
+}
+
+#root {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 420px;
+  padding: 30px 20px 20px;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 3px 1px rgba(34,10,53,.35);
+  -moz-box-shadow: 2px 2px 3px 1px rgba(0,0,0,.35);
+  -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,.35);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+  border-spacing: 10px 10px;
+}
+
+.th {
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 20px;
+  border: 1px solid #447441;
+  text-align: right;
+}
+
+.inner {
+  float: right;
+}
+
+td {
+  border-bottom: 1.5px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #ececec;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+td:hover {
+  box-shadow: inset .5px .5px 1px 0 rgba(18,22,93,.45);
+  border: 0;
+}
+
+th {
+  height: 50px;
+  text-align: right;
+}
+
+.light {
+  color: #ddd;
+}
+
+.darkbtn {
+  background-color: #d8d5dc;
+  border-bottom: 1.5px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+@media (max-width:480px) {
+  #root {
+    width: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  table {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-height:500px) {
+  #root {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.45ebc3ca97c097f8ef3c.css.map*/
